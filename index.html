@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="shortcut icon" href="./assets/img/brands/logo.png" type="image/x-icon">
+    <title>Tiktok - Make Your Days</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Begin: Header -->
+        <header class="header">
+            <div class="grid header-wrappper">
+                <!-- Brand logo -->
+                <a href="#tiktok" class="header-brand">
+                    <img src="./assets/img/brands/tiktok.svg" alt="Tiktok - Make Your Days" title="Tiktok"
+                        class="header-brand__img">
+                </a>
+                <!-- End: Brand logo -->
+
+                <!-- Search input -->
+                <div class="header-search">
+                    <input type="search" placeholder="Tìm kiếm tài khoản" spellcheck="false"
+                        class="header-search__input">
+                    <button class="header-search__submit">
+                        <img src="./assets/img/icon/search-submit.svg" alt="Tìm kiếm" class="header-search__submit-btn">
+                    </button>
+                    <ul class="header-search__results">
+                        <li class="header-search__results-item">
+                            <h4 class="header-search__results-user checked">
+                                <span>yua_mikami</span>
+                                <i class="fas fa-check"></i>
+                            </h4>
+                            <h5 class="header-search__results-username">三上悠亜</h5>
+                        </li>
+                        <li class="header-search__results-item">
+                            <h4 class="header-search__results-user">
+                                <span>cciinnn</span>
+                                <i class="fas fa-check"></i>
+                            </h4>
+                            <h5 class="header-search__results-username">CiiN</h5>
+                        </li>
+                        <li class="header-search__results-more">
+                            Xem tất cả kết quả dành cho "i"
+                        </li>
+                    </ul>
+                </div>
+                <!-- End: Search input -->
+
+                <!-- User -->
+                <div class="header-user">
+                    <!-- Item of User -->
+                    <a href="#upload" class="header-user__item" tooltip data-tooltip="Tải video lên">
+                        <img src="./assets/img/icon/user-upload.svg" alt="Tải video lên!" class="header-user__item-btn">
+                    </a>
+                    <a href="#upload" class="header-user__item" tooltip data-tooltip="Tin nhắn">
+                        <img src="./assets/img/icon/user-messages.svg" alt="Tin nhắn" class="header-user__item-btn">
+                    </a>
+                    <span href="#upload" class="header-user__item js-mailbox-btn" tooltip data-tooltip="Hộp thư">
+                        <svg class="header-user__item-btn" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.0362 21.3333H18.5243L15.9983 24.4208L13.4721 21.3333H7.96047L7.99557 8H24.0009L24.0362 21.3333ZM24.3705 23.3333H19.4721L17.2883 26.0026C16.6215 26.8176 15.3753 26.8176 14.7084 26.0026L12.5243 23.3333H7.62626C6.70407 23.3333 5.95717 22.5845 5.9596 21.6623L5.99646 7.66228C5.99887 6.74352 6.74435 6 7.66312 6H24.3333C25.2521 6 25.9975 6.7435 26 7.66224L26.0371 21.6622C26.0396 22.5844 25.2927 23.3333 24.3705 23.3333ZM12.6647 14C12.2965 14 11.998 14.2985 11.998 14.6667V15.3333C11.998 15.7015 12.2965 16 12.6647 16H19.3313C19.6995 16 19.998 15.7015 19.998 15.3333V14.6667C19.998 14.2985 19.6995 14 19.3313 14H12.6647Z">
+                            </path>
+                        </svg>
+
+                        <!-- Mailbox -->
+                        <div class="header-user__item-mailbox js-mailbox">
+                            <h2 class="header-user__item-mailbox-heading">Thông báo</h2>
+                            <div class="header-user__item-mailbox-header">
+                                <ul class="header-user__item-mailbox-type-list">
+                                    <li class="header-user__item-mailbox-type active">
+                                        Tất cả
+                                    </li>
+                                    <li class="header-user__item-mailbox-type">
+                                        Thích
+                                    </li>
+                                    <li class="header-user__item-mailbox-type">
+                                        Bình luận
+                                    </li>
+                                    <li class="header-user__item-mailbox-type">
+                                        Nhắc đến
+                                    </li>
+                                    <li class="header-user__item-mailbox-type">
+                                        Follower
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-user__item-mailbox-body">
+                                <section class="header-user__item-mailbox-body-section">
+                                    <h3 class="header-user__item-mailbox-this-heading">
+                                        Hôm nay
+                                    </h3>
+                                    <div class="header-user__item-mailbox-notify">
+                                        <a href="#" class="header-user__item-mailbox-notify-item">
+                                            <div class="header-user__item-mailbox-notify-user-wrapper">
+                                                <img src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/ae5a350c8c9e9af216bb0d49da19aac8~c5_300x300.webp?x-expires=1627293600&x-signature=zsN1bR9cX4Z8bffY77hXNin2Fj0%3D"
+                                                    alt="linlinhere202" class="header-user__item-mailbox-notify-img">
+                                                <div class="header-user__item-mailbox-notify-user">
+                                                    <h4 class="header-user__item-mailbox-notify-username">linlinhere202
+                                                    </h4>
+                                                    <p class="header-user__item-mailbox-notify-reply">đã trả lời bình
+                                                        luận của bạn: xinh y chang tui ha 🥺😌😳😅 4 - 17</p>
+                                                    <p class="header-user__item-mailbox-notify-your-cmt">
+                                                        v.a.n.l.o.c.0.8.1.1: 🥰🥰🥰</p>
+                                                </div>
+                                            </div>
+                                            <img src="https://p16-sign-va.tiktokcdn.com/obj/tos-useast2a-p-0037-aiso/2e5d420ef9e54f2587cd5167567bacb3_1627196590?x-expires=1627228800&x-signature=jPWOj%2BQr2jWdoeCt61TP0mj93Z0%3D"
+                                                alt="ntcjimmu" class="header-user__item-mailbox-notify-video-thumbnail">
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="header-user__item-mailbox-body-section">
+                                    <h3 class="header-user__item-mailbox-this-heading">
+                                        Tháng này
+                                    </h3>
+                                    <div class="header-user__item-mailbox-notify">
+                                        <a href="#" class="header-user__item-mailbox-notify-item">
+                                            <div class="header-user__item-mailbox-notify-user-wrapper">
+                                                <img src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/a944b875b7bb56505b4ba76226042728~c5_300x300.webp?x-expires=1627290000&x-signature=FaMtiAtHmWpU2qLBBN4SIaMRmqs%3D"
+                                                    alt="trangsoi97" class="header-user__item-mailbox-notify-img">
+                                                <div class="header-user__item-mailbox-notify-user">
+                                                    <h4 class="header-user__item-mailbox-notify-username">trangsoi97
+                                                    </h4>
+                                                    <p class="header-user__item-mailbox-notify-reaction">đã thích bình
+                                                        luận của bạn 4 - 17</p>
+                                                    <p class="header-user__item-mailbox-notify-your-cmt">
+                                                        v.a.n.l.o.c.0.8.1.1: 🥰🥰🥰</p>
+                                                </div>
+                                            </div>
+                                            <img src="https://p16-sign-va.tiktokcdn.com/obj/tos-useast2a-p-0037-aiso/9fcff8b7eeb7478496593b9d9ab4080a?x-expires=1627225200&x-signature=b1iDR2RHnXMTFZd6bNM602hU81A%3D"
+                                                alt="trangsoi97"
+                                                class="header-user__item-mailbox-notify-video-thumbnail">
+                                        </a>
+                                        <a href="#" class="header-user__item-mailbox-notify-item">
+                                            <div class="header-user__item-mailbox-notify-user-wrapper">
+                                                <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/17627e88017ae32ab5975f9bf6bfaab3~c5_300x300.webp?x-expires=1627290000&x-signature=dNcQb9VFl2dIft5hGOAXvCNMqdQ%3D"
+                                                    alt="francescomarino464"
+                                                    class="header-user__item-mailbox-notify-img">
+                                                <div class="header-user__item-mailbox-notify-user">
+                                                    <h4 class="header-user__item-mailbox-notify-username">
+                                                        francescomarino464</h4>
+                                                    <p class="header-user__item-mailbox-notify-reaction">đã bắt đầu
+                                                        follow bạn. 7 - 6</p>
+                                                    <!-- <p class="header-user__item-mailbox-notify-your-cmt"></p> -->
+                                                </div>
+                                            </div>
+                                            <!-- <img src="https://p16-sign-va.tiktokcdn.com/obj/tos-useast2a-p-0037-aiso/9fcff8b7eeb7478496593b9d9ab4080a?x-expires=1627225200&x-signature=b1iDR2RHnXMTFZd6bNM602hU81A%3D" alt="francescomarino464" class="header-user__item-mailbox-notify-video-thumbnail"> -->
+                                            <button class="header-user__item-mailbox-notify-follow-back">Follow
+                                                lại</button>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- End: Mailbox  -->
+
+                        <!-- <img src="./assets/img/icon/user-mailbox.svg" alt="Hộp thư" class="header-user__item-btn"> -->
+                    </span>
+                    <!-- End: Item of User -->
+
+                    <!-- User account -->
+                    <div class="header-user__account">
+                        <img src="./assets/img/user/avatar.jpeg" alt="Your Name" class="header-user__account-avatar">
+                        <ul class="header-user__account-list">
+                            <li class="header-user__account-item">
+                                <a href="#view-profile">
+                                    <img src="./assets/img/icon/user-view-profile.svg" alt="Xem hồ sơ">
+                                    <span>Xem hồ sơ</span>
+                                </a>
+                            </li>
+                            <li class="header-user__account-item">
+                                <a href="#view-profile">
+                                    <img src="./assets/img/icon/user-setting.svg" alt="Cài đặt">
+                                    <span>Cài đặt</span>
+                                </a>
+                            </li>
+                            <li class="header-user__account-item js-switch-languages">
+                                <div>
+                                    <img src="./assets/img/icon/user- switch-languages.svg" alt="Tiếng Việt">
+                                    <span>Tiếng Việt</span>
+                                </div>
+                            </li>
+                            <li class="header-user__account-item">
+                                <a href="#view-profile">
+                                    <img src="./assets/img/icon/user-help.svg" alt="Phản hồi và trợ giúp">
+                                    <span>Phản hồi và trợ giúp</span>
+                                </a>
+                            </li>
+                            <li class="header-user__account-item-decoration"></li>
+                            <li class="header-user__account-item">
+                                <a href="#view-profile">
+                                    <img src="./assets/img/icon/user-logout.svg" alt="Đăng xuất">
+                                    <span>Đăng xuất</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header-user__account-languages js-languages">
+                            <div class="header-user__account-languages-head">
+                                <span class="header-user__account-languages-back">
+                                    <i class="fas fa-angle-left"></i>
+                                </span>
+                                <h3 class="header-user__account-languages-heading">Ngôn ngữ</h3>
+                            </div>
+                            <ul class="header-user__account-languages-list">
+                                <li class="header-user__account-languages-item">Tiếng Việt (Việt Nam)</li>
+                                <li class="header-user__account-languages-item">English</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End: User account -->
+                </div>
+                <!-- End: User -->
+            </div>
+        </header>
+        <!-- End: Header -->
+        <div class="container">
+            <div class="grid">
+
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const btnMailbox = $('.js-mailbox-btn');
+        const dataMailbox = $('.js-mailbox');
+        var hasMailbox = false;
+        btnMailbox.click(function (e) {
+            var icon = $(this).find('.header-user__item-btn path'); 
+            hasMailbox = !hasMailbox;
+            if (hasMailbox) {
+                $(this).removeAttr('tooltip')
+                dataMailbox.delay(50).fadeIn(200);
+            } else {
+                $(this).attr('tooltip', '')
+                dataMailbox.delay(50).fadeOut(200);
+            }
+        });
+        dataMailbox.click(function (e) {
+            e.stopImmediatePropagation();
+        });
+    </script>
+
+    <script>
+        const btnSwitchLang = $('.js-switch-languages');
+        const languagesForm = $('.js-languages');
+
+        btnSwitchLang.click(function() {
+            var backBtn = $('.header-user__account-languages-back');
+            languagesForm.addClass('open');
+            backBtn.click(function() {
+                languagesForm.removeClass('open');
+            });
+            languagesForm.mouseleave(function() {
+                languagesForm.removeClass('open');
+            })
+        });
+    </script>
+</body>
+
+</html>
