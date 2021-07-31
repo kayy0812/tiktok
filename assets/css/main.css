@@ -863,14 +863,6 @@
     font-size: 1.3rem;
 }
 
-.video__body-actions-like {
-
-}
-
-.video__body-actions-item {
-
-}
-
-.video__body-actions-item {
-
+.video__body-actions-like.active {
+    fill: var(--primary-color)
 }
