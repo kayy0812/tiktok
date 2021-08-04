@@ -823,13 +823,7 @@
 }
 
 .video__body-player {
-    width: calc(0.56 * (450px + ((100vw - 768px) / 1152) * 100));
     margin: 16px 0 0 67px;
-}
-
-.video__body-player video {
-    width: 100%;
-    border-radius: 8px;
 }
 
 .video__body-actions {
@@ -859,6 +853,7 @@
 }
 
 .video__body-actions-count {
+    letter-spacing: 1px;
     margin-top: 8px;
     font-size: 1.3rem;
 }

@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/player.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="shortcut icon" href="./assets/img/brands/logo.png" type="image/x-icon">
     <title>Tiktok - Make Your Days</title>
@@ -591,7 +592,7 @@
                                         </div>
                                         <div class="video__body">
                                             <div class="video__body-player">
-                                                <video controls>
+                                                <video class="tiktok-player" controls>
                                                     <source src="./assets/videos/yua-mikami01.mp4">
                                                 </video>
                                             </div>
@@ -761,7 +762,7 @@
                                         </div>
                                         <div class="video__body">
                                             <div class="video__body-player">
-                                                <video controls>
+                                                <video class="tiktok-player" controls>
                                                     <source src="./assets/videos/yua-mikami02.mp4">
                                                 </video>
                                             </div>
@@ -931,7 +932,7 @@
                                         </div>
                                         <div class="video__body">
                                             <div class="video__body-player">
-                                                <video controls>
+                                                <video class="tiktok-player" controls>
                                                     <source src="./assets/videos/yua-mikami03.mp4">
                                                 </video>
                                             </div>
@@ -1101,7 +1102,7 @@
                                         </div>
                                         <div class="video__body">
                                             <div class="video__body-player">
-                                                <video controls>
+                                                <video class="tiktok-player" controls>
                                                     <source src="./assets/videos/yua-mikami04.mp4">
                                                 </video>
                                             </div>
@@ -1271,7 +1272,7 @@
                                         </div>
                                         <div class="video__body">
                                             <div class="video__body-player">
-                                                <video controls>
+                                                <video class="tiktok-player" class="tiktok-player" controls>
                                                     <source src="./assets/videos/yua-mikami05.mp4">
                                                 </video>
                                             </div>
@@ -1432,6 +1433,14 @@
                 languagesForm.removeClass('open');
             })
         });
+    </script>
+
+    <script>
+        // Tiktok player
+        const tiktokPlayer = $('video.tiktok-player');
+        tiktokPlayer.attr('disablepictureinpicture', 'false');
+        tiktokPlayer.attr('controlsList', 'nodownload')
+        console.log(tiktokPlayer);
     </script>
 </body>
 
