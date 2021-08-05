@@ -1,35 +1,51 @@
 .tiktok-player {
+    user-select: none;
+    position: relative;
     cursor: pointer;
-    outline: none;
-    border-radius: 8px;
     width: calc(0.56 * (450px + ((100vw - 768px) / 1152) * 100));
 }
 
-.tiktok-player::-webkit-media-controls-timeline,
-.tiktok-player::-webkit-media-controls-volume-slider,
-.tiktok-player::-webkit-media-controls-fullscreen-button,
-.tiktok-player::-webkit-media-controls-toggle-closed-captions-button,
-.tiktok-player::-webkit-media-controls-closed-captions-container,
-.tiktok-player::-webkit-media-controls-current-time-display,
-.tiktok-player::-webkit-media-controls-time-remaining-display {
+.tiktok-player__source {
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tiktok-player__source::-webkit-media-controls {
     display: none;
 }
 
-.tiktok-player::-webkit-media-controls-play-button {
-    display: none;
-    zoom: 1.4;
-    opacity: 1;
-    transition: all .3s ease;
+.tiktok-player__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    font-size: 1.8rem;
+    z-index: 1;
 }
 
-.tiktok-player::-webkit-media-controls-play-button {
+.tiktok-player__controls-play-btn {
+    transition: opacity .2s ease .1s;
     opacity: 0;
 }
 
-.tiktok-player:hover::-webkit-media-controls-play-button {
+.tiktok-player__controls-play-btn > svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--white-color);
+}
+
+.tiktok-player:hover 
+.tiktok-player__controls-play-btn {
     opacity: 1;
 }
 
-.tiktok-player:hover::-webkit-media-controls-mute-button {
-    
+.tiktok-player__controls-mute-btn > svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-color);
 }

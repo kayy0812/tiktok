@@ -32,7 +32,7 @@ html {
 
 .grid {
     width: 1060px;
-    max-width: 100%;
+    max-width: calc(100% - 32px);
     margin: 0 auto;
 }
 
@@ -55,6 +55,7 @@ html {
 }
 
 [tooltip]:hover::before {
+    display: block;
     animation: tooltip .2s ease forwards;
     z-index: 99;
 }
@@ -64,6 +65,7 @@ html {
 }
 
 [tooltip]::before {
+    display: none;
     content: attr(data-tooltip);
     background-color: var(--tooltip-color);
     color: var(--white-color);
