@@ -17,6 +17,9 @@
     --btn-hover-color: #ec2a51;
     --actions-item-color: #f1f1f2;
     --actions-item-hover-color: #dfdfdf;
+    --mailbox-desc-color: #C5C5C8;
+
+    --primary-width: 1060px;
 }
 
 * {
@@ -31,8 +34,8 @@ html {
 }
 
 .grid {
-    width: 1060px;
-    max-width: calc(100% - 32px);
+    width: var(--primary-width);
+    max-width: calc(100% - 20px);
     margin: 0 auto;
 }
 

@@ -30,6 +30,10 @@
 .header-wrappper {
     display: flex;
     justify-content: space-between;
+    width: var(--primary-width);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 8px;
 }
 
 .header-brand {
@@ -192,7 +196,7 @@
     right: -58px;
     width: 400px;
     border-radius: 8px;
-    padding: 26px 0;
+    padding: 26px 0 8px;
 }
 
 .header-user__item-mailbox.open {
@@ -235,7 +239,7 @@
     display: inline-block;
     background-color: #f1f1f1;
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 2px 8px;
     border-radius: 32px;
     margin-right: 4px;
@@ -252,7 +256,12 @@
 }
 
 .header-user__item-mailbox-body {
-    margin-top: 16px;
+    overflow-y: scroll;
+    height: 420px;
+}
+
+.header-user__item-mailbox-body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
 }
 
 .header-user__item-mailbox-body-section {
@@ -260,7 +269,7 @@
 }
 
 .header-user__item-mailbox-this-heading {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     opacity: 0.6;
 }
 
@@ -275,7 +284,7 @@
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
-    color: #C5C5C8;
+    color: var(--mailbox-desc-color);
     padding: 12px 16px;
 }
 
@@ -305,11 +314,9 @@
 .header-user__item-mailbox-notify-your-cmt,
 .header-user__item-mailbox-notify-reply {
     margin: 0;
-    font-size: 1.5rem;
 }
 
 .header-user__item-mailbox-notify-username {
-    font-size: 1.6rem;
     color: var(--black-color);
 }
 
@@ -321,14 +328,22 @@
     margin-top: 8px;
 }
 
+.header-user__item-mailbox-notify-time-ago {
+    color: var(--mailbox-desc-color);
+    margin-left: 2px;
+}
+
 .header-user__item-mailbox-notify-reply {
     color: var(--black-color);
     margin-top: 8px;
 }
 
 .header-user__item-mailbox-notify-your-cmt {
-    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     border-left: 2px solid var(--border-color);
+    margin-top: 8px;
     padding: 0 4px;
 }
 
@@ -477,12 +492,20 @@
     padding: 10px 16px;
 }
 
+.container {
+    display: flex;
+    width: var(--primary-width);
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 .sidebar {
     --header--height: 59px;
     margin-top: var(--header--height);
     overflow-y: scroll;
     max-height: calc(100vh - var(--header--height));
     flex: 1;
+    width: 20%;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -537,6 +560,7 @@
 }
 
 .sidebar-header__item > span {
+    margin-top: 1px;
     font-weight: 600;
 }
 
@@ -708,8 +732,13 @@
     overflow-y: scroll;
     height: calc(100vh - 59px);
     margin-top: 59px;
-    padding: 24px 8px;
     flex: 2.2;
+    padding: 24px 8px;
+}
+
+.main::-webkit-scrollbar {
+    position: fixed;
+    right: -10%;
 }
 
 .main::-webkit-scrollbar-thumb {
