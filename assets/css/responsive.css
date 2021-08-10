@@ -51,6 +51,14 @@
     .header-search {
         display: none;
     }
+
+    .video__header {
+        flex-wrap: wrap;
+    }
+
+    .video__header-btn {
+        margin: 8px 0 0 67px;
+    }
     
     .video__body {
         flex-direction: column;
@@ -60,6 +68,10 @@
 
     .video__body-actions {
         flex-direction: row;
+    }
+
+    .video__body-actions-item {
+        margin-right: 3px;
     }
 
     .video__body-actions-count {
