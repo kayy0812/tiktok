@@ -773,6 +773,16 @@
     font-size: 1.6rem
 }
 
+.video__header-user--bridge::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 64px;
+    height: 6px;
+    background-color: transparent;
+}
+
 .video__header-user:hover
 .user-details {
     display: block;

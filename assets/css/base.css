@@ -165,6 +165,7 @@ html {
 .user-details {
     position: absolute;
     display: none;
+    cursor: default;
     animation: fadeIn .2s ease;
     background-color: var(--white-color);
     box-shadow: 0 0 4px var(--box-shadow-color);
