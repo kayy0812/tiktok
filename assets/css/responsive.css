@@ -61,20 +61,12 @@
     }
     
     .video__body {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-left: 0;
     }
 
     .video__body-actions {
-        flex-direction: row;
-    }
-
-    .video__body-actions-item {
-        margin-right: 3px;
-    }
-
-    .video__body-actions-count {
-        margin-right: 8px;
+        margin-right: 18px;
     }
 }
