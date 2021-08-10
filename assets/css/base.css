@@ -160,6 +160,11 @@ html {
     color: var(--white-color);
 }
 
+.btn:hover.btn--hover-color {
+    cursor: pointer;
+    background-color: var(--btn-hover-color);
+}
+
 /* User Hover Details */
 
 .user-details {
