@@ -28,9 +28,10 @@
 
 html {
     font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
     /* 10px = 1rem */
     font-size: 62.5%;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .grid {

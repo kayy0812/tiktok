@@ -505,7 +505,6 @@
     overflow-y: scroll;
     max-height: calc(100vh - var(--header--height));
     flex: 1;
-    width: 20%;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -732,7 +731,7 @@
     overflow-y: scroll;
     height: calc(100vh - 59px);
     margin-top: 59px;
-    flex: 2.2;
+    flex: 2.3;
     padding: 24px 8px;
 }
 
@@ -889,4 +888,29 @@
 
 .video__body-actions-like.active {
     fill: var(--primary-color)
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 8px;
+    right: 32px;
+}
+
+.footer__dowloads {
+    cursor: pointer;
+    background-color: var(--white-color);
+    border-radius: 32px;
+}
+
+.footer__scroll-to-top {
+    display: inline-block;
+    background-image: url('../img/icon/back-to-top.svg');
+    background-size: cover;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
 }
