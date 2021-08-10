@@ -51,4 +51,18 @@
     .header-search {
         display: none;
     }
+    
+    .video__body {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .video__body-actions {
+        flex-direction: row;
+    }
+
+    .video__body-actions-count {
+        margin-right: 8px;
+    }
 }
