@@ -1827,6 +1827,7 @@
             `;
             player.appendChild(tiktokPlayerData);
             const sourcePlayer = player.querySelector('video.tiktok-player__source');
+            sourcePlayer.setAttribute('preload', 'auto');
             
             // Nút chạy / dừng video
             const btnPlay = player.querySelector('.tiktok-player__controls-play-btn');

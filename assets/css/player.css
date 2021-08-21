@@ -8,6 +8,7 @@
 .tiktok-player__source {
     outline: none;
     width: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
