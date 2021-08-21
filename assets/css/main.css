@@ -9,8 +9,7 @@
     font-size: 0.6rem;
 }
 
-.checked 
-.wrapper-checked-icon {
+.checked .wrapper-checked-icon {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
@@ -18,6 +17,9 @@
 
 .header {
     border-bottom: 1px solid var(--border-color);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     position: fixed;
     top: 0;
@@ -124,8 +126,7 @@
     left: 0;
 }
 
-.header-search__input:focus ~ 
-.header-search__results {
+.header-search__input:focus~.header-search__results {
     display: block;
 }
 
@@ -156,7 +157,7 @@
     align-items: center;
 }
 
-.header-search__results-user > span {
+.header-search__results-user>span {
     margin-right: 8px;
 }
 
@@ -348,6 +349,7 @@
 }
 
 .header-user__item-mailbox-notify-video-thumbnail {
+    -o-object-fit: cover;
     object-fit: cover;
     width: 42px;
     border-radius: 3px;
@@ -366,8 +368,7 @@
     height: 32px;
 }
 
-.header-user__account:hover 
-.header-user__account-list {
+.header-user__account:hover .header-user__account-list {
     display: block;
 }
 
@@ -386,6 +387,7 @@
 .header-user__account-languages {
     position: absolute;
     list-style: none;
+    -webkit-animation: fadeIn .2s ease;
     animation: fadeIn .2s ease;
     box-shadow: 0 0 10px var(--box-shadow-color);
     background-color: var(--white-color);
@@ -421,7 +423,7 @@
     right: 18px;
 }
 
-.header-user__account-item > * {
+.header-user__account-item>* {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -432,7 +434,7 @@
     font-size: 1.6rem;
 }
 
-.header-user__account-item > *:hover,
+.header-user__account-item>*:hover,
 .header-user__account-languages-item:hover {
     cursor: pointer;
     background-color: var(--item-hover-color);
@@ -537,7 +539,7 @@
     background-color: var(--item-hover-color);
 }
 
-.sidebar-header__item > svg {
+.sidebar-header__item>svg {
     width: 32px;
     height: 32px;
     margin-right: 8px;
@@ -547,23 +549,21 @@
     display: none;
 }
 
-.sidebar-header__item.active 
-.sidebar-header__item-icon-actived {
+.sidebar-header__item.active .sidebar-header__item-icon-actived {
     display: block;
     fill: var(--primary-color);
 }
 
-.sidebar-header__item.active 
-.sidebar-header__item-icon-not-active {
+.sidebar-header__item.active .sidebar-header__item-icon-not-active {
     display: none;
 }
 
-.sidebar-header__item > span {
+.sidebar-header__item>span {
     margin-top: 1px;
     font-weight: 600;
 }
 
-.sidebar-header__item.active > span {
+.sidebar-header__item.active>span {
     color: var(--primary-color);
 }
 
@@ -630,7 +630,7 @@
     align-items: center;
 }
 
-.sidebar-body-users__information-user > span {
+.sidebar-body-users__information-user>span {
     margin-right: 6px;
 }
 
@@ -652,8 +652,7 @@
     opacity: 0.8;
 }
 
-.sidebar-body-users-item:hover 
-.user-details {
+.sidebar-body-users-item:hover .user-details {
     display: block;
 }
 
@@ -667,7 +666,7 @@
     margin: 0 8px 8px 0;
 }
 
-.sidebar-body-discover-item  > a {
+.sidebar-body-discover-item>a {
     display: flex;
     text-decoration: none;
     border: 1px solid var(--border-color);
@@ -684,7 +683,7 @@
     margin-right: 8px;
 }
 
-.sidebar-body-discover-tag > svg {
+.sidebar-body-discover-tag>svg {
     width: 100%;
     height: 100%;
 }
@@ -753,9 +752,7 @@
     border-bottom: 1px solid var(--border-color);
 }
 
-.main 
-.grid-column-1:last-child 
-.main-video {
+.main .grid-column-1:last-child .main-video {
     border-bottom: none;
 }
 
@@ -783,15 +780,13 @@
     background-color: transparent;
 }
 
-.video__header-user:hover
-.user-details {
+.video__header-user:hover .user-details {
     display: block;
     width: 320px;
     left: 0;
 }
 
-.video__header-user:hover 
-.video__header-userid > span {
+.video__header-user:hover .video__header-userid>span {
     text-decoration: underline;
 }
 
@@ -802,8 +797,7 @@
     font-weight: 600;
 }
 
-.video__header-userid
-.wrapper-checked-icon {
+.video__header-userid .wrapper-checked-icon {
     margin-left: 8px;
 }
 
@@ -850,7 +844,7 @@
     margin-top: 10px;
 }
 
-.video__header-music-theme:hover > span {
+.video__header-music-theme:hover>span {
     text-decoration: underline;
 }
 

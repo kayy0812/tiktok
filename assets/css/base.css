@@ -60,11 +60,13 @@ html {
 
 [tooltip]:hover::before {
     display: block;
+    -webkit-animation: tooltip .2s ease forwards;
     animation: tooltip .2s ease forwards;
     z-index: 99;
 }
 
 [tooltip]:hover::after {
+    -webkit-animation: arrowTooltip .2s ease forwards;
     animation: arrowTooltip .2s ease forwards;
 }
 
@@ -96,14 +98,39 @@ html {
     border-bottom-color: var(--tooltip-color);
 }
 
+@-webkit-keyframes tooltip {
+    from {
+        opacity: 0;
+        top: calc(100% - 6px);
+    }
+
+    to {
+        opacity: 1;
+        top: calc(100% + 12px);
+    }
+}
+
 @keyframes tooltip {
     from {
         opacity: 0;
         top: calc(100% - 6px);
     }
+
     to {
         opacity: 1;
         top: calc(100% + 12px);
+    }
+}
+
+@-webkit-keyframes arrowTooltip {
+    from {
+        opacity: 0;
+        top: 0;
+    }
+
+    to {
+        opacity: 1;
+        top: calc(100% - 8px);
     }
 }
 
@@ -112,6 +139,7 @@ html {
         opacity: 0;
         top: 0;
     }
+
     to {
         opacity: 1;
         top: calc(100% - 8px);
@@ -119,10 +147,21 @@ html {
 }
 
 /* Animation */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -171,6 +210,7 @@ html {
     position: absolute;
     display: none;
     cursor: default;
+    -webkit-animation: fadeIn .2s ease;
     animation: fadeIn .2s ease;
     background-color: var(--white-color);
     box-shadow: 0 0 4px var(--box-shadow-color);
@@ -240,7 +280,7 @@ html {
     margin-right: 10px;
 }
 
-.user-details-counts > span {
+.user-details-counts>span {
     margin-left: 4px;
 }
 
