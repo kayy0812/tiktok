@@ -5,6 +5,10 @@
 
 /* Tablet & mobile */
 @media (max-width: 1023px) {
+    .tiktok-player__controls-play-btn {
+        opacity: 1;
+    }
+    
     .sidebar {
         flex: unset;
         border-right: 1px solid var(--border-color);
@@ -48,10 +52,6 @@
 
 /* Mobile */ 
 @media (max-width: 739px) {
-    .tiktok-player__controls-play-btn {
-        opacity: 1;
-    }
-
     .header-search {
         display: none;
     }
