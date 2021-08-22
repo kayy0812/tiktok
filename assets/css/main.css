@@ -387,12 +387,11 @@
 .header-user__account-languages {
     position: absolute;
     list-style: none;
-    -webkit-animation: fadeIn .2s ease;
-    animation: fadeIn .2s ease;
+    -webkit-animation: fadeIn .1s ease;
+    animation: fadeIn .1s ease;
     box-shadow: 0 0 10px var(--box-shadow-color);
     background-color: var(--white-color);
     top: calc(100% + 4px);
-    padding-left: 0;
     padding: 8px 0;
     right: -12px;
     width: 220px;
